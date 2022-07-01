@@ -1,6 +1,8 @@
 # What_Am_I_Eating
+<p align="center">
+    <img width=450 height=300 src="assets/meme.jpeg">
+</p>
 
-![meme](assets/meme.jpeg)
 
 Hello and welcome, What_Am_I_Eating is my first computer vision project (get the meme now?).  
 Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README. The article describes the project better.
