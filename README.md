@@ -1,6 +1,6 @@
 # What_Am_I_Eating
 <p align="center">
-    <img width=450 height=300 src="assets/meme.jpeg">
+    <img width=300 height=168.75 src="assets/meme.jpeg">
 </p>
 
 
