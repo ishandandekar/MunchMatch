@@ -18,7 +18,7 @@ The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datas
 
 ## Model
 The model uses transfer learning to use the `EfficientNetB0` architecture under the hood. The model has four layers, namely:
-* The Input layer: Confirms the inputs to the neural network is in the form of tensor with shape (224,224,3).
+* The Input layer: This layer confirms that the inputs to the neural network is in the form of tensor with shape (224,224,3).
 * EfficientNetB0: Using the keras API and exploiting the transfer learning, the neural network uses a `EfficientNetB0`. This is a pretrained model on the classical ImageNet dataset. We fine-tune the weights and biases to make the predictions better. Learn more about the architecture of `EfficientNetB0` - [architecture](https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html)
 * GlobalAveragePooling2D layer: This layer takes the average of all the numbers in the previous layer and then condenses it into a (1,3) tensor. Layers such as GlobalAveragePooling2D layer, MaxPooling layers etc., usually come in handy in CNNs as there are a lot of numbers and the output layer may take much time to then predict classes.
 * Dense layer: This is used so that we have 1 neuron for each class.
@@ -34,3 +34,4 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 * assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article
 * fine_tuned_model.h5: This is the Tensorflow model (in .h5 format) which the app uses to classify the images
 * app.py: The web app made using streamlit library. This is the python script use to make the web app.
+* requirements.txt: As the convention goes, this file has information about the `conda` environment used to create this project.
