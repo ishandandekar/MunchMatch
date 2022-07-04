@@ -29,7 +29,7 @@ def plot_loss_curves(history):
   plt.xlabel('Epochs')
   plt.legend();
 
-def show_random_samples(dir_name=train_data,class_names=class_names):
+def show_random_samples(dir_name,class_names):
   """
   Shows n random samples from directory
 
