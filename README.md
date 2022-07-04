@@ -38,3 +38,5 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 * requirements.txt: As the convention goes, this file has information about the `conda` environment used to create this project.
 * make_the_batter.ipynb: This is the notebook used to create the models
 * bake_the_batter.pptx: Used for presenting this project.
+
+A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project
