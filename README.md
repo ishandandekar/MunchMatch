@@ -5,12 +5,12 @@
 
 
 Hello and welcome to What_Am_I_Eating. What_Am_I_Eating is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
-Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README. The article describes the project better.  
+Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README.  
 
 ## Introduction
-What_Am_I_Eating is an app which classifies the food item present in the image.  The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper.The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).  
+What_Am_I_Eating is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).  
 
-While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library,how we can leverage other pre-trained models using **transfer learning**, how we can fine-tune these pre-trained models using *fine tuning* method.
+While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library, how we can leverage other pre-trained models using **transfer learning**, how we can fine-tune these pre-trained models using *fine tuning* method.
 
 ## Data
 The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)** dataset. This dataset was used in the various papers such as [DeepFood](https://arxiv.org/abs/1606.05675) and [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/). The data has 101 food categories and a total of 101,000 images. For each class, there are 250 test images and 750 train images. This is a lot of data. To optimize training I used the Food101 data available in *tensorflow-datasets* library. This made it really easy to use, as the data was already in tensors.
@@ -32,6 +32,9 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 
 ## Contents of the repository
 * assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article
+* fine_tuned_model_with_model_ckpt_wo_mp: While deploying the model on Streamlit cloud, I ran into many errors because I used mixed precision when making the model. This model is made without using mixed precision feature of Tensorflow. Use `fine_tuned_model.h5` for better and faster predictions.
 * fine_tuned_model.h5: This is the Tensorflow model (in .h5 format) which the app uses to classify the images
 * app.py: The web app made using streamlit library. This is the python script use to make the web app.
 * requirements.txt: As the convention goes, this file has information about the `conda` environment used to create this project.
+* make_the_batter.ipynb: This is the notebook used to create the models
+* bake_the_batter.pptx: Used for presenting this project.
