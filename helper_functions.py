@@ -28,3 +28,23 @@ def plot_loss_curves(history):
   plt.title('Accuracy')
   plt.xlabel('Epochs')
   plt.legend();
+
+def show_random_samples(dir_name=train_data,n_samples=1,class_names=class_names):
+  """
+  Shows n random samples from directory
+
+  Args:
+    dir_name: Directory to look into while getting images
+    n_samples: Number of samples to show
+    class_names: List of class names of the image data
+  """
+  for image, label in dir_name.take(n_samples):
+    print(f"""
+    Image shape: {image.shape},
+    Image datatype: {image.dtype},
+    Target class from Food101 (tensor form): {label},
+    Class name: {class_names[label.numpy()]}
+    """)
+    plt.imshow(image/255)
+    plt.title(f"{class_names[label.numpy()]}")
+    plt.axis(False)
