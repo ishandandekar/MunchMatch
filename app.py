@@ -127,7 +127,7 @@ CLASS_NAMES=['apple_pie',
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-	model = tf.keras.models.load_model('fine_tuned_model.h5')
+	model = tf.keras.models.load_model('fine_tuned_model_with_model_ckpt_wo_mp.h5')
 	return model
 
 def load_and_prep(filename,img_shape=224):
@@ -141,7 +141,7 @@ def predict(image,model):
     pred_class = CLASS_NAMES[pred_prob.argmax()]
     st.markdown(f"Prediction probability:{pred_prob}")
     st.markdown(f"Prediction probability argsorted:{tf.argsort(pred_prob)}")
-    st.markdown(f"Prediction probability argsorted max:{tf.argmax(pred_prob)}")
+    st.markdown(f"Prediction probability argsorted max:{tf.argmax(tf.reshape(pred_prob,[101]))}")
     pred_class = pred_class.replace('_',' ').capitalize()
     st.markdown(f"The model predicts, it is a **{pred_class}**")
 
