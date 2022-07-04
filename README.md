@@ -1,8 +1,8 @@
 # What_Am_I_Eating
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/bake_the_batter.ipynb)
 <p align="center">
     <img width=300 height=170 src="assets/meme.jpeg">
 </p>
-
 
 Hello and welcome to What_Am_I_Eating. What_Am_I_Eating is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
 Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README.  
@@ -36,7 +36,8 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 * fine_tuned_model.h5: This is the Tensorflow model (in .h5 format) which the app uses to classify the images
 * app.py: The web app made using streamlit library. This is the python script use to make the web app.
 * requirements.txt: As the convention goes, this file has information about the `conda` environment used to create this project.
+    > :bulb:**Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 * make_the_batter.ipynb: This is the notebook used to create the models
 * bake_the_batter.pptx: Used for presenting this project.
 
-A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project
+A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project.
