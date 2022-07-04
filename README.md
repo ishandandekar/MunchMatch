@@ -35,7 +35,7 @@ The model got around **78% accuracy** on the test set.
 The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict. The website also displays a probability graph after the prediction.
 
 ## Future development
-Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes() too! A diet recommender also seems like a great idea.
+Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea.
 
 ## Contents of the repository
 * assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article
