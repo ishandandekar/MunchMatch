@@ -10,7 +10,7 @@ Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e
 ## Introduction
 What_Am_I_Eating is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).  
 
-While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library, how we can leverage other pre-trained models using **transfer learning**, how we can fine-tune these pre-trained models using *fine tuning* method.
+While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library, how we can leverage other pre-trained models using *transfer learning*, how we can fine-tune these pre-trained models using *fine tuning* method. I also understood the importance of *data augmentation* and how it helps the model generalize better.
 
 ## Data
 The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)** dataset. This dataset was used in the various papers such as [DeepFood](https://arxiv.org/abs/1606.05675) and [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/). The data has 101 food categories and a total of 101,000 images. For each class, there are 250 test images and 750 train images. This is a lot of data. To optimize training I used the Food101 data available in *tensorflow-datasets* library. This made it really easy to use, as the data was already in tensors.
@@ -28,7 +28,10 @@ We then compile the model with `sparse_categorical_crossentropy` loss, `Adam` op
 The model got around **78% accuracy** on the test set.
 
 ## App
-The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict. The website also displays a probability graph after the prediction. This graph shows the probability of the image being of that class (only top 5 classes).
+The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict. The website also displays a probability graph after the prediction.
+
+## Future development
+Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes() too! A diet reccomender also seems like an option too.
 
 ## Contents of the repository
 * assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article

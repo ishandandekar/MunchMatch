@@ -138,7 +138,9 @@ def predict(image,model):
     pred_prob = model.predict(tf.expand_dims(image, axis=0),verbose=0) # make prediction on image with shape [None, 224, 224, 3]
     pred_class = CLASS_NAMES[pred_prob.argmax()]
     pred_class = pred_class.replace('_',' ').capitalize()
-    st.success(f"The model predicts, it is a **{pred_class}**")
+    prob_pred_class = tf.reduce_max(pred_prob).numpy()*100
+    prob_class_str = "{:.2f}".format(prob_pred_class)
+    st.success(f"It is a **{pred_class}** with {prob_class_str}% confidence")
 
 st.markdown("<h1 style='text-align: center;'>What_Am_I_Eating &#127828&#128064;</h1>", unsafe_allow_html=True)
 col1,col2 = st.columns([2,1])
