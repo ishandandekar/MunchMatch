@@ -1,8 +1,6 @@
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
-import numpy as np
-import matplotlib.pyplot as plt
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 st.set_page_config(page_title="What_Am_I_Eating",page_icon=":eyes:",layout="wide")
@@ -15,7 +13,7 @@ st.markdown("""
                     padding-right: 5rem;
                 }
                .css-1d391kg {
-                    padding-top: 3.5rem;
+                    padding-top: 0rem;
                     padding-right: 1rem;
                     padding-bottom: 3.5rem;
                     padding-left: 1rem;
@@ -163,6 +161,7 @@ As said, the model is a neural network made using Tensorflow. The neural network
 * Activation layer: This layer is used to finally classify the tensors in classes. We have used *softmax* activation function as this is a multi-class classification problem. The activation could've have been integrated with the *Dense* layer itself. We have used this type of structure to use the *mixed_precision* feature of tensorflow and keras.
 We then compile the model with *sparse_categorical_crossentropy* loss, *Adam* optimizer and use *accuracy* as a metric.
 """,unsafe_allow_html=True)
+    st.markdown("[Github](https://github.com/ishandandekar/What_Am_I_Eating)  [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e)")
 
 with col2:
     st.markdown("""
