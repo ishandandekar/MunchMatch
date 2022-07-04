@@ -139,9 +139,6 @@ def predict(image,model):
     image = load_and_prep(image)
     pred_prob = model.predict(tf.expand_dims(image, axis=0),verbose=0) # make prediction on image with shape [None, 224, 224, 3]
     pred_class = CLASS_NAMES[pred_prob.argmax()]
-    st.markdown(f"Prediction probability:{pred_prob}")
-    st.markdown(f"Prediction probability argsorted:{tf.argsort(pred_prob)}")
-    st.markdown(f"Prediction probability argsorted max:{tf.argmax(tf.reshape(pred_prob,[101]))}")
     pred_class = pred_class.replace('_',' ').capitalize()
     st.markdown(f"The model predicts, it is a **{pred_class}**")
 
