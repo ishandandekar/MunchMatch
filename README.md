@@ -1,5 +1,5 @@
 # What_Am_I_Eating
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/make_the_batter.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/make_the_batter.ipynb)
 <p align="center">
     <img width=300 height=170 src="assets/meme.jpeg">
 </p>
@@ -34,6 +34,14 @@ The model got around **78% accuracy** on the test set.
 ## App
 The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict. The website also displays a probability graph after the prediction.
 
+## Tools and libraries
+* Python
+* Jupyter notebook
+* Tensorflow
+* Keras
+* Streamlit
+* Git
+
 ## Future development
 Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea.
 
@@ -46,5 +54,7 @@ Although this project is simple and easy to make, I really want it to make a ful
     > :bulb:**Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 * make_the_batter.ipynb: This is the notebook used to create the models
 * bake_the_batter.pptx: Used for presenting this project.
+
+If you encounter any errors in the website, please make sure to add the error in the Issues tab of Github repository.
 
 A special thanks to [Daniel Bourke](https://www.mrdbourke.com/) for this project.
