@@ -43,7 +43,7 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 * Git
 
 ## Future development
-Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea.
+Although this project is simple and easy to make, I really want it to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea. I also paln to make more models for better accuracy. For example, to incorporate EfficientNetB3 or ResNets etc.
 
 ## Contents of the repository
 * assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article
