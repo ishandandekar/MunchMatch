@@ -27,6 +27,10 @@ The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datas
 
 ## Model
 
+<p align="center">
+    <img src="assets/model_meme_1.jpeg">
+</p>
+
 The model uses transfer learning to use the `EfficientNetB0` architecture under the hood. The model has four layers, namely:
 
 - The Input layer: This layer confirms that the inputs to the neural network is in the form of tensor with shape (224,224,3).
@@ -40,7 +44,7 @@ The model got around **78% accuracy** on the test set.
 
 ## App
 
-The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict. The website also displays a probability graph after the prediction.
+The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict.
 
 ## Tools and libraries
 
