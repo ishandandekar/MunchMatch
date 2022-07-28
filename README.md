@@ -46,6 +46,10 @@ The model got around **78% accuracy** on the test set.
 
 The web app is made using Streamlit. I chose this framework as it is very easy to make web apps with it and then deploy it. The website is accompanied by the model (in .h5 file format). This reduces the time taken to predict.
 
+## Future development
+
+Although this project is simple and easy to make, I really want to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea. I also paln to make more models for better accuracy. For example, to incorporate EfficientNetB3 or ResNets etc.
+
 ## Tools and libraries
 
 - Python
@@ -54,10 +58,6 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 - Keras
 - Streamlit
 - Git
-
-## Future development
-
-Although this project is simple and easy to make, I really want to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea. I also paln to make more models for better accuracy. For example, to incorporate EfficientNetB3 or ResNets etc.
 
 ## Contents of the repository
 
