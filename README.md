@@ -57,18 +57,30 @@ Although this project is simple and easy to make, I really want to make a full-f
 - Tensorflow
 - Keras
 - Streamlit
-- Git
+- Git and Github
 
 ## Contents of the repository
 
-- assets: This folder contains images and other unecessary files, which are either required by the app or the Medium article
-- fine_tuned_model_with_model_ckpt_wo_mp: While deploying the model on Streamlit cloud, I ran into many errors because I used mixed precision when making the model. This model is made without using mixed precision feature of Tensorflow. Use `fine_tuned_model.h5` for better and faster predictions.
-- fine_tuned_model.h5: This is the Tensorflow model (in .h5 format) which the app uses to classify the images
-- app.py: The web app made using streamlit library. This is the python script use to make the web app.
-- requirements.txt: As the convention goes, this file has information about the `conda` environment used to create this project.
-  > :bulb:**Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
-- make_the_batter.ipynb: This is the notebook used to create the models
-- bake_the_batter.pptx: Used for presenting this project.
+```
+What_Am_I_Eating/
+├─ assets/
+├─ helper_functions.py
+├─ README.md
+├─ fine_tuned_model.h5
+├─ fine_tuned_model_with_model_ckpt_wo_mp.h5
+├─ bake_the_batter.pptx
+├─ make_the_batter.ipynb
+├─ requirements.txt
+```
+
+- _assets_ : This folder contains images and other unecessary files, which are either required by the app or the Medium article
+- _fine_tuned_model_with_model_ckpt_wo_mp_ : While deploying the model on Streamlit cloud, I ran into many errors because I used mixed precision when making the model. This model is made without using mixed precision feature of Tensorflow. Use `fine_tuned_model.h5` for better and faster predictions.
+- _fine_tuned_model.h5_ : This is the Tensorflow model (in .h5 format) which the app uses to classify the images
+- _app.py_ : The web app made using streamlit library. This is the python script use to make the web app.
+- _requirements.txt_ : As the convention goes, this file has information about the `conda` environment used to create this project.
+  > **Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
+- _make_the_batter.ipynb_ : This is the notebook used to create the models
+- _bake_the_batter.pptx_ : Used for presenting this project.
 
 If you encounter any errors in the website, please make sure to add the error in the Issues tab of Github repository.
 
