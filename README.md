@@ -78,9 +78,10 @@ What_Am_I_Eating/
 - _fine_tuned_model.h5_ : This is the Tensorflow model (in .h5 format) which the app uses to classify the images
 - _app.py_ : The web app made using streamlit library. This is the python script use to make the web app.
 - _requirements.txt_ : As the convention goes, this file has information about the `conda` environment used to create this project.
-  > **Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 - _make_the_batter.ipynb_ : This is the notebook used to create the models
 - _bake_the_batter.pptx_ : Used for presenting this project.
+
+> **Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 
 If you encounter any errors in the website, please make sure to add the error in the Issues tab of Github repository.
 
