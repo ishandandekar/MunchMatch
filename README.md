@@ -81,7 +81,7 @@ What_Am_I_Eating/
 - _make_the_batter.ipynb_ : This is the notebook used to create the models
 - _bake_the_batter.pptx_ : Used for presenting this project.
 
-> **Note:** If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
+> **Note** : If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 
 If you encounter any errors in the website, please make sure to add the error in the Issues tab of Github repository.
 
