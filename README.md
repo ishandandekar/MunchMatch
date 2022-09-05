@@ -47,7 +47,7 @@ The web app is made using Streamlit. I chose this framework as it is very easy t
 
 ## Future development
 
-Although this project is simple and easy to make, I really want to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea. I also paln to make more models for better accuracy. For example, to incorporate EfficientNetB3 or ResNets etc. I would also like to get the better model on cloud using AWS or GCP to use the mixed precision feature.
+Although this project is simple and easy to make, I really want to make a full-fledged app which shows information about the classes too! A diet recommender also seems like a great idea. I also paln to make more models for better accuracy, for example, to incorporate EfficientNetB3 or ResNets etc. I would also like to get the better model on cloud using AWS or GCP to use the mixed precision feature.
 
 ## Tools and libraries
 
