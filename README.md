@@ -39,7 +39,7 @@ The model uses transfer learning to use the `EfficientNetB0` architecture under 
 - **Dense layer**: This is used so that we have 1 neuron for each class.
 - **Activation layer**: This layer is used to finally classify the tensors in classes. We have used `softmax` activation function as this is a multi-class classification problem. The activation could've have been integrated with the `Dense` layer itself. The model is have used this type of structure to use the `mixed_precision` feature of tensorflow and keras.
 
-The model is then compiled `sparse_categorical_crossentropy` loss, `Adam` optimizer and use `accuracy` as a metric. The model got around **78% accuracy** on the test set.
+The model is then compiled `sparse_categorical_crossentropy` loss, `Adam` optimizer to update the parameters. The model got around **78% accuracy** on the test set.
 
 ## App
 
