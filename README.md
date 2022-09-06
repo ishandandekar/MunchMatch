@@ -15,7 +15,7 @@ Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e
 
 ## Introduction
 
-What_Am_I_Eating is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).
+**What_Am_I_Eating** is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).
 
 While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library, how we can leverage other pre-trained models using _transfer learning_, how we can fine-tune these pre-trained models using _fine tuning_ method. I also understood the importance of _data augmentation_ and how it helps the model generalize better.
 
