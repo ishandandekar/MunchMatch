@@ -3,7 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/make_the_batter.ipynb)
 
 <p align="center">
-    <img width=300 height=170 src="assets/meme.jpeg">
+    <img width=400 height=200 src="assets/meme.jpeg">
 </p>
 
 Hello and welcome to **What_Am_I_Eating**. What_Am_I_Eating is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
@@ -31,15 +31,15 @@ The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datas
     <img src="assets/model_meme_1.jpeg">
 </p>
 
-The model uses transfer learning to use the `EfficientNetB0` architecture under the hood. The model has **five** layers, namely:
+The model uses transfer learning to use the **EfficientNetB0** architecture under the hood. The model has **five** layers, namely:
 
 - **Input layer**: This layer confirms that the inputs to the neural network is in the form of tensor with shape (224,224,3).
-- **EfficientNetB0**: Using the keras API and exploiting the transfer learning, the neural network uses a `EfficientNetB0`. This is a pretrained model on the classical ImageNet dataset. We fine-tune the weights and biases to make the predictions better. Learn more about the architecture of `EfficientNetB0` - [architecture](https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html)
+- **EfficientNetB0**: Using the keras API and exploiting the transfer learning, the neural network uses a EfficientNetB0 as its base model. This is a pretrained model on the classical ImageNet dataset. To make the model better adapt to data, I fine-tuned the weights and biases to make the predictions better. Learn more about the architecture of `EfficientNetB0` - [architecture](https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html)
 - **GlobalAveragePooling2D** layer: This layer takes the average of all the numbers in the previous layer and then condenses it into a (1,3) tensor. Layers such as GlobalAveragePooling2D layer, MaxPooling layers etc., usually come in handy in CNNs as there are a lot of numbers and the output layer may take much time to then predict classes.
 - **Dense layer**: This is used so that we have 1 neuron for each class.
 - **Activation layer**: This layer is used to finally classify the tensors in classes. We have used `softmax` activation function as this is a multi-class classification problem. The activation could've have been integrated with the `Dense` layer itself. The model is have used this type of structure to use the `mixed_precision` feature of tensorflow and keras.
 
-The model is then compiled `sparse_categorical_crossentropy` loss, `Adam` optimizer to update the parameters. The model got around **78% accuracy** on the test set.
+The model used _categorical crossentropy_ to check the goodness of fit and used _Adam_ optmizer to update its weights and other parameters. The model achieved around **78% accuracy** on the test set.
 
 ## App
 
