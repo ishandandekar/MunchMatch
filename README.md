@@ -1,6 +1,6 @@
 # What_Am_I_Eating Synopsis
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/make_the_batter.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/notebooks/make_the_batter.ipynb)
 
 <p align="center">
     <img width=400 height=200 src="assets/meme.jpeg">
@@ -63,22 +63,19 @@ Although this project is simple and easy to make, I really want to make a full-f
 ```
 What_Am_I_Eating/
 ├─ assets/
-├─ helper_functions.py
+├─ models/
+├─ scripts/
+├─ notebooks/
+├─ LICENSE
 ├─ README.md
-├─ fine_tuned_model.h5
-├─ fine_tuned_model_with_model_ckpt_wo_mp.h5
-├─ bake_the_batter.pptx
-├─ make_the_batter.ipynb
 ├─ requirements.txt
 ```
 
 - _assets_ : This folder contains images and other unecessary files, which are either required by the app or the Medium article
-- _fine_tuned_model_with_model_ckpt_wo_mp_ : While deploying the model on Streamlit cloud, I ran into many errors because I used mixed precision when making the model. This model is made without using mixed precision feature of Tensorflow. Use `fine_tuned_model.h5` for better and faster predictions.
-- _fine_tuned_model.h5_ : This is the Tensorflow model (in .h5 format) which the app uses to classify the images
-- _app.py_ : The web app made using streamlit library. This is the python script use to make the web app.
+- _models_ : Contains models made for the project and classification. `fine_tuned_model_with_model_ckpt_wo_mp.h5` is used for the streamlit app. The original model is `fine_tuned_model.h5`, but as Streamlit does not support mixed precision feature (Tensorflow utility), I made another model which does not use this.
+- _scripts_ : Constains all the python scripts helpful for the project. This also contains the app script used for productionizing the project.
+- _notebooks_ : Contains jupyter notebooks used for this project. The notebook contains analysis of the dataset and the modelling experiments performed.
 - _requirements.txt_ : As the convention goes, this file has information about the `conda` environment used to create this project.
-- _make_the_batter.ipynb_ : This is the notebook used to create the models
-- _bake_the_batter.pptx_ : Used for presenting this project.
 
 > **Note** : If you wish to replicate this project, use this `requirements.txt` file to create the python environment. This file was used to create the app environment too. Due to which I had to omit certain librabries. while making the environment, make sure to uncomment line 98 and 99. These libraries make help python run on Windows.
 
