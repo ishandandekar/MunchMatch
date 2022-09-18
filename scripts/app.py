@@ -125,7 +125,7 @@ CLASS_NAMES=['apple_pie',
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-	model = tf.keras.models.load_model('fine_tuned_model_with_model_ckpt_wo_mp.h5')
+	model = tf.keras.models.load_model('models/fine_tuned_model_with_model_ckpt_wo_mp.h5')
 	return model
 
 def load_and_prep(filename,img_shape=224):
