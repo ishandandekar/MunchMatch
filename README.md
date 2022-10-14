@@ -7,7 +7,7 @@
 </p>
 
 Hello and welcome to **What_Am_I_Eating**. What_Am_I_Eating is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
-Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README. Check the [Website](https://ishandandekar-what-am-i-eating-scriptsapp-825nag.streamlitapp.com/)!
+Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README. Check the [Website](https://what-am-i-eating.streamlitapp.com/)!
 
 <p align="center">
     <img src="assets/app_snap.jpg">
