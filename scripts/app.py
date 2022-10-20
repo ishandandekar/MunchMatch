@@ -173,7 +173,7 @@ with col2:
         st.write("There are 101 classes, so these are some 5 labels")
         import random
         st.write(random.sample(CLASS_NAMES,5))
-    image = st.file_uploader(label="Choose and image",type=['png','jpg','jpeg'])
+    image = st.file_uploader(label="Upload an image",type=['png','jpg','jpeg'])
     if image is not None:
         st.image(image=image)
         test_image = Image.open(image)
