@@ -7,7 +7,7 @@ st.set_page_config(page_title="What_Am_I_Eating",page_icon=":eyes:",layout="wide
 st.markdown("""
         <style>
                .css-18e3th9 {
-                    padding-top: 0rem;
+                    padding-top: 2rem;
                     padding-bottom: 10rem;
                     padding-left: 5rem;
                     padding-right: 5rem;
