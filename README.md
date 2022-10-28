@@ -23,7 +23,7 @@ While doing this project I learned the various techniques and processes. I learn
 
 The model is trained on the **[Food101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)** dataset. This dataset was used in the various papers such as [DeepFood](https://arxiv.org/abs/1606.05675) and [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/). The data has 101 food categories and a total of 101,000 images. For each class, there are 250 test images and 750 train images. This is a lot of data. To optimize training I used the Food101 data available in _tensorflow-datasets_ library. This made it really easy to use, as the data was already in tensors.
 
-> **Note:** You can also find the dataset on **Kaggle** ([link](https://www.kaggle.com/datasets/dansbecker/food-101))
+> **Note** : You can also find the dataset on **Kaggle** ([link](https://www.kaggle.com/datasets/dansbecker/food-101))
 
 ## Model
 
