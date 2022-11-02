@@ -1,4 +1,4 @@
-# What_Am_I_Eating Synopsis
+# What_Am_I_Eating
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/notebooks/make_the_batter.ipynb)
 
