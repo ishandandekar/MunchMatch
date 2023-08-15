@@ -1,12 +1,12 @@
-# What_Am_I_Eating
+# MunchMatch
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/What_Am_I_Eating/blob/main/notebooks/make_the_batter.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ishandandekar/MunchMatch/blob/main/notebooks/make_the_batter.ipynb)
 
 <p align="center">
     <img width=400 height=200 src="assets/meme.jpeg">
 </p>
 
-Hello and welcome to **What_Am_I_Eating**. What_Am_I_Eating is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
+Hello and welcome to **MunchMatch**. MunchMatch is my first computer vision project (get the meme now? the meme has vision in it and vision is also a computer, so "computer vision").
 Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e) article as a supplement to this README. Check the [Website](https://what-am-i-eating.streamlitapp.com/)!
 
 <p align="center">
@@ -15,7 +15,7 @@ Check out the [Medium](https://medium.com/@ishandandekar/foodvision-3843f38be45e
 
 ## Introduction
 
-**What_Am_I_Eating** is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).
+**MunchMatch** is an app which classifies the food item present in the image. The main aim of building this model was to beat the [DeepFood](https://arxiv.org/abs/1606.05675)📄 paper. The app uses a neural network to classify these images into 101 categories of food items. I made this project while completing the [Zero to mastery Tensorflow course](https://zerotomastery.io/courses/learn-tensorflow/).
 
 While doing this project I learned the various techniques and processes. I learned how to get preprocessed data using `tensorflow-datasets` library, how we can leverage other pre-trained models using _transfer learning_, how we can fine-tune these pre-trained models using _fine tuning_ method. I also understood the importance of _data augmentation_ and how it helps the model generalize better.
 
@@ -61,7 +61,7 @@ Although this project is simple and easy to make, I really want to make a full-f
 ## Contents of the repository
 
 ```
-What_Am_I_Eating/
+MunchMatch/
 ├─ assets/
 ├─ models/
 ├─ scripts/
