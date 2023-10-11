@@ -1,5 +1,6 @@
 import streamlit as st
 import tensorflow as tf
+import numpy as np
 from PIL import Image
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
@@ -138,6 +139,7 @@ def load_model():
 
 
 def load_and_prep(filename, img_shape=224):
+    img = np.array(filename)
     img = tf.cast(filename, tf.float32)
     img = tf.image.resize(img, [img_shape, img_shape])
     return img
