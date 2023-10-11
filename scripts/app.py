@@ -140,7 +140,7 @@ def load_model():
 
 def load_and_prep(filename, img_shape=224):
     img = np.array(filename)
-    img = tf.cast(filename, tf.float32)
+    img = tf.cast(img, tf.float32)
     img = tf.image.resize(img, [img_shape, img_shape])
     return img
 
